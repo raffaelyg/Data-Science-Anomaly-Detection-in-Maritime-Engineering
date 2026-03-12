@@ -55,13 +55,13 @@ anomalies = data[data['anomaly_label'] == -1]
 
 The Correlation Heatmap revealed weak linear relationships between individual sensors. This confirms that engine failure is rarely a simple linear cascade; rather, it is a complex, non-linear deviation from homeostasis that requires sophisticated models like Isolation Forest rather than simple threshold alerts.
 
-![Correlation Heatmap](/images/image1.jpeg)
+![Correlation Heatmap](/images/image1.png)
 
 ### II. PCA Scree Analysis
 
 The Explained Variance Ratio plot indicates that the majority of engine behaviour can be explained by a subset of principal components. By focusing on these, the model effectively ignores operational "noise" and focuses on genuine systemic shifts.
 
-![Correlation Heatmap](/images/image1.jpeg)
+![Correlation Heatmap](/images/image2.png)
 
 ### III. Triangulating the "Outlier"
 
@@ -71,7 +71,7 @@ The study visualised anomalies across 1% to 5% contamination levels.
 
 **Logic Audit**: The divergence between models proves that anomaly detection is a decision-support tool; different models "see" failure differently depending on whether they prioritise distance-based or tree-partitioning logic.
 
-![Correlation Heatmap](/images/image1.jpeg)
+![Correlation Heatmap](/images/image3.png)
 
 ## 🔑 Key Takeaways & Applications
 * **Model Triangulation**: Relying on a single algorithm is insufficient; a combination of statistical and ML approaches is required to provide a comprehensive "safety net" for maritime assets.
